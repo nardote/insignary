@@ -1,0 +1,69 @@
+.signup form {
+  width: 296px;
+  margin: 0 auto;
+}
+.signup label {
+  font-size: 10px;
+  color: rgb(90, 90, 90);
+}
+  
+.signup input[type=text], .signup input[type=email], .signup input[type=password] {
+        border-width: 2px;
+        border-color: rgb(225, 225, 225);
+        border-style: solid;
+        border-radius: 2px;
+        width: 296px;
+        height: 29px;
+}
+
+.signup input[type=text], .signup input[type=email]:focus, .signup input[type=password]:focus{
+        border-color: rgb(196, 196, 196);
+}
+
+.signup .remember-me {
+  font-size: 10px;
+  color: rgb(149, 149, 149);
+  font-weight: 400
+}
+
+.signup .button-wrapper {
+  text-align: center
+}
+.signup .button-wrapper .btn {
+  margin: 1em;
+  font-size: 14px;
+      padding: 0.2em 3em;
+}
+
+.signup .button-wrapper p {
+  font-size: 12px;
+}
+.signup .button-wrapper a {
+  font-size: 12px;
+  color: rgb(239, 65, 54);
+  font-weight: 700;
+}
+.signup .form-row {
+  position: relative
+} 
+.signup .forgot-pass {
+  font-size: 8px;
+  color: rgb(149, 149, 149);
+  text-decoration: underline;
+  float: right;
+}
+
+.signup .error {
+  position: absolute;
+  text-transform: uppercase;
+  left: 306px;
+  top: 27px;
+  font-size: 12px;
+  color: rgb(239, 65, 54);
+  font-weight: 700;
+}
+
+
+.signup .error.show {
+    display:block
+}

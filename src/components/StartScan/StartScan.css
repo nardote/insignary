@@ -1,0 +1,80 @@
+.startscan {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+} 
+.startscan .input-file {
+  height: 61px;
+  border-radius: 2px;
+  background-color: #fafafa;
+  box-shadow: 0px 2px 2px 0 rgba(105, 105, 105, 0.4);
+  padding-left: 1em;
+  margin-bottom: 65px;
+   cursor: pointer
+}
+.startscan .input-file .placeholder{
+  font-size: 19.6px;
+  color: #5d5d5d;
+  height: 61px;
+  line-height: 61px;
+  float: left;
+}
+.startscan .row {
+    text-align: left
+}
+
+.startscan .input-file-button {
+    border-radius: 0;
+    border: 0;
+  width: 61px;
+  height: 61px;
+  background-color: #ef4136;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  cursor: pointer
+}
+.startscan .input-file-button img {
+  width: 16px;
+  height: 32px;
+}
+
+.startscan h5{
+    font-size: 1em;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 35px;
+}
+
+
+
+.startscan label {
+    font-size: 1em;
+  color: #333333;
+  font-weight: normal;
+  margin: 0;
+  
+}
+.startscan .btnScan {
+    margin: 130px auto 0;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    width: 157px;
+    height: 35px;
+    border-radius: 2px;
+    background-color: #ef4136;
+}
+
+.startscan .add-margin {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.startscan p {
+    margin-bottom: 10px;
+}
+
+
+

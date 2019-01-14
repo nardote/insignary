@@ -1,0 +1,240 @@
+@import 'milligram.css';
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+.btn {    
+    border-radius: 2px;
+    background-color: #ef4136;   
+    font-size: 11px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 24px;
+    margin: 0;
+    height: auto;
+    transition: background .25s ease-in-out;
+   -moz-transition: background .25s ease-in-out;
+   -webkit-transition: background .25s ease-in-out;
+   border: 0;
+}
+
+.btn:hover {
+    background: #ef4150;
+}
+.center {
+    text-align: center;
+}
+
+/*--------- Modal ----------*/
+.ReactModal__Overlay {
+  -webkit-perspective: 600;
+  perspective: 600;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transition: opacity 150ms ease-out;
+}
+
+.ReactModal__Content {
+  transform: scale(0.5) rotateX(-30deg);
+}
+
+.ReactModal__Content--after-open {
+  transform: scale(1) rotateX(0deg);
+  transition: all 150ms ease-in;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.ReactModal__Content--before-close {
+  transform: scale(0.5) rotateX(30deg);
+  transition: all 150ms ease-in;
+}
+
+.ReactModal__Content.modal-dialog {
+  border: none;
+  background-color: transparent;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: auto;
+    outline: none;
+    
+    width: 364px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 2px 0 rgba(105, 105, 105, 0.9);
+    padding: 0;
+    height: auto;
+}
+
+.modal .msg {
+    padding: 10px 10px 10px 10px;
+    margin: 0 0 16px 0;
+    text-align: center;    
+    color: #000000;
+}
+.modal .msg .title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.88;
+    color: #000000;
+}
+
+.modal .msg .text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000000;
+}
+.modal .actions {
+    margin: 0;
+
+}
+
+.modal .actions .btn {
+    border-radius: 0;
+    background: #f2f2f2;
+    height: 58px;
+    font-size: 18px;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #000000;
+    font-weight: normal;
+}
+
+.modal .actions .btn.callToAction {
+    border-radius: 0;
+    background: #ef4136;
+    color: #FFFFFF;
+}
+
+/* one items */
+.modal .actions .btn:first-child:nth-last-child(1) {
+    width: 100%;
+}
+/* two items */
+.modal .actions .btn:first-child:nth-last-child(2),
+.modal .actions .btn:first-child:nth-last-child(2) ~ .btn {
+    width: 50%;
+}
+
+/* three items */
+.modal .actions .btn:first-child:nth-last-child(3),
+.modal .actions .btn:first-child:nth-last-child(3) ~ .btn {
+    width: 33.3333%;
+}
+
+/* four items */
+.modal .actions .btn:first-child:nth-last-child(4),
+.modal .actions .btn:first-child:nth-last-child(4) ~ .btn {
+    width: 25%;
+}
+
+
+
+/*** checkbox ***/
+.checkbox {
+    float: left;
+    clear: both;
+    margin: 0;
+}
+
+
+
+.checkbox:checked,
+.checkbox:not(:checked)
+{
+    position: absolute;
+    left: -9999px;
+}
+.checkbox:checked + label,
+.checkbox:not(:checked) + label
+{
+    position: relative;
+    padding-left: 23px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+.checkbox:checked + label:before,
+.checkbox:not(:checked) + label:before
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    border: 1px solid #ef4136;
+    border-radius: 2px;
+    background: #fff;
+}
+.checkbox:checked + label:after,
+.checkbox:not(:checked) + label:after
+{
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #ef4136;
+    border-radius: 2px;
+    
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+.checkbox:not(:checked) + label:after
+{
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+.checkbox:checked + label:after
+{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.checkbox:disabled:checked + label:before,
+.checkbox:disabled:not(:checked) + label:before
+{
+    border-color: #ccc;
+    background-color: #eee;
+}
+.checkbox:disabled:checked + label:after
+{
+    background: #aaa;
+}
+

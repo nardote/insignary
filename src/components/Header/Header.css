@@ -1,0 +1,93 @@
+header {
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    box-shadow: 0px 2px 2px 0 rgba(105, 105, 105, 0.6);
+    height: 84px;
+}
+header > div {
+    width: 50%;
+}
+.logo {
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.logo img{
+    width: 240px;
+    margin-left: 50px;
+}
+.header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.header-menu ul li {
+    position: relative;
+}
+
+.header-menu ul li ul.subMenu {
+    width: 100%;
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 2px 0 rgba(143, 143, 143, 0.6);
+    min-width: 120px;
+    margin: 0;
+    padding: 0;
+}
+.header-menu ul li ul.subMenu {
+    font-size: 12px;  
+    letter-spacing: 0.6px;
+    color: #595858;
+    padding: 0;
+}
+.header-menu ul li:hover ul.subMenu {
+    display: block;
+}
+
+.header-menu ul li a {
+    font-size: 0.875em;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    color: #333333;
+    margin: 8px 1.75em 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid transparent;
+}
+.header-menu ul li a.active {
+    border-bottom: 2px solid  #ef4136;
+}
+.header-menu ul li ul li {
+    padding:0;
+    margin: 0;
+}
+.header-menu ul li ul li a {
+    display: block;
+    padding:0 9px 0 9px;
+    margin: 0;
+    line-height: 33px;
+}
+.header-menu ul li ul li a:hover {
+    background: #e7e7e7;
+}
+
+
+.header-menu ul li ul.subMenu li {
+    display: block
+}
+
+.header-menu ul li.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "user 1",
+      "email": "user1@email.com"
+    }
+  ],
+  "results": [
+    {
+      "name": "bin",
+      "type": "folder",
+      "id": 1,
+      "children": [
+        {
+          "name": "archivo1.php",
+          "type": "file",
+          "id": 2
+        },
+        {
+          "name": "bin",
+          "type": "folder",
+          "id": 5,
+          "children": [
+            {
+              "name": "archivo4.php",
+              "type": "file",
+              "id": 6
+            },
+            {
+              "name": "bin",
+              "type": "folder",
+              "id": 1235,
+              "children": [
+                {
+                  "name": "archivo4.php",
+                  "type": "file",
+                  "id": 64
+                },
+                {
+                  "name": "archivo5.php",
+                  "type": "file",
+                  "id": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

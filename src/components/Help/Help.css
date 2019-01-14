@@ -1,0 +1,18 @@
+.help .menu {
+    margin: 40px 0 48px 0;
+}
+.help .menu a.active {
+    border-bottom: 2px solid  #ef4136;
+}
+.help .menu  a {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 20px;
+  color: #5d5d5d;
+  margin:60px 20px 0 0;
+  vertical-align: middle;
+  text-transform: uppercase;
+  padding: 0 0 11px 0;
+}

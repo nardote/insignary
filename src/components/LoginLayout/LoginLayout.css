@@ -1,0 +1,10 @@
+.login-layout {
+    margin: 140px auto 0;
+    width: 444px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.login-layout img {
+    margin: 0 auto;
+}
